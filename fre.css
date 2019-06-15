@@ -5,7 +5,6 @@ body{
 }
 
 a{
-    display: inline-block;
     font-size: 16px;
     color: #7fffd4;
     text-decoration: none
@@ -46,20 +45,49 @@ a:hover{
 
 .sab{
     text-align: center;
-    margin-top: -15px;
+    margin-top: 0.1%;
 }
 nav li {
-    display: inline;
+    display: inline-block;
     margin-right: 40px;
     font-size: 20px;
-
-
     
 }
 
 
 
 
+.sac{
+
+    position: relative;
+    margin-top: 5%;
+
+}
+
+
+div li{
+    position: relative ;
+    z-index: 1;
+    left: -2%;
+    width:10%;
+    text-align: center;
+    line-height: 40px;
+    background-color: coral;
+    margin-top: 1em;
+    display: block;
+    border-radius: 3px;
+    font-size: 2em;
+}
+
+.sad{
+    width: 960px;
+    height: 960px;
+    background-image: url(bkpic.jpg);
+    position: relative;
+    margin-top: -18%;
+    left: 50%;
+    margin-left: -480px;
+}
 
 
 
@@ -85,7 +113,7 @@ nav li {
 
 .asz{
     position: absolute;
-    bottom: 0.1%;
+    margin-top:51.5%;
     width: 100%;
     line-height: 20px;
     text-align: center;
@@ -93,7 +121,8 @@ nav li {
     /* border-radius: 6px; */
 
 }
+/* 
 .asza{
     position: relative;
     left: -25%;
-}
+} */
