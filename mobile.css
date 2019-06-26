@@ -22,6 +22,7 @@ a:hover{
 }
 
 nav li {
+    position: relative;
     text-align: center;
     width: 100%;
     background-color: rgb(206, 206, 206);
@@ -31,19 +32,25 @@ nav li {
     border-radius: 10px;
     line-height: 2em;
     color:black;
+    margin: -2% auto;
     
 }
 
 nav a {
-    width: 30%;
+    position: relative;
+    width: 35%;
     display: inline-block;
-    margin-top: 8%;
-    margin-left: 12%;
+    margin: 2% 7%;
+    /* margin-left: 12%;
+    margin-top: 2%; */
     border-radius: 10px;
 }
 
 .sab{
-
+    width: 80%;
+    background-color: blueviolet;
+    position: relative;
+    margin: -2% auto;
 }
 
 
@@ -74,4 +81,12 @@ nav a {
 
 
 
-
+.asz{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    bottom: 0%;
+    /* margin-bottom: 0.001%; */
+    text-align: center;
+    font-size: 1.135em;
+}
