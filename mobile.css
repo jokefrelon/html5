@@ -4,9 +4,8 @@ body{
     background-color:white
 }
 a{
-    font-size: 16px;
-    color: #7fffd4;
-    text-decoration: none
+    text-decoration: none;
+    background-color: blue
 }
     
 a:hover{
@@ -22,19 +21,30 @@ a:hover{
     background-color:white;
 }
 
-.asaaa{
-    border-radius: 40px;
-
-}
-
 nav li {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
     display: inline-block;
-    margin-right: 40px;
-    font-size: 20px;
+    font-size: 1.975em;
+    font-weight: bolder;
+    border-radius: 10px;
+    line-height: 2em;
+    color:black;
     
 }
 
+nav a {
+    width: 30%;
+    display: inline-block;
+    margin-top: 8%;
+    margin-left: 12%;
+    border-radius: 10px;
+}
 
+.sab{
+
+}
 
 
 
