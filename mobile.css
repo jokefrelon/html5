@@ -23,22 +23,14 @@ margin-right: auto;
 }
 
 
-/* nav a {
-    position: relative;
-    width: 35%;
-    display: inline-block;
-    margin: 2% 7%;
-    border-radius: 10px;
-    background-color: rgba(206, 206, 206, 0.658);
-} */
-
-
-
 .sab{
+    position: relative;
+    top: 3%;
     width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 .menu-left{
     width: 48%;
@@ -64,7 +56,7 @@ margin-right: auto;
     margin-right: 0px;
     background-color: rgb(206, 206, 206);
 }
-nav li {
+div li {
     text-decoration: none;
     position: relative;
     text-align: center;
@@ -97,7 +89,12 @@ nav li {
     }
 }
 
-
+.sad{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    margin-top: 20px;
+}
 
 
 
