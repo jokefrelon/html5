@@ -5,7 +5,6 @@ body{
 }
 a{
     text-decoration: none;
-    background-color: blue
 }
     
 a:hover{
@@ -13,46 +12,90 @@ a:hover{
     text-decoration: none
 }
 
- .asa{
-    width: 100% ;
-    height: max-content;
-    text-align: center;
-    color:black;
-    background-color:white;
+.asaaa{
+margin-top: 0px;
+width: 100%;
+height: auto;
+max-width: 800px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
-nav li {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(206, 206, 206);
-    display: inline-block;
-    font-size: 1.975em;
-    font-weight: bolder;
-    border-radius: 10px;
-    line-height: 2em;
-    color:black;
-    margin: -2% auto;
-    
-}
 
-nav a {
+/* nav a {
     position: relative;
     width: 35%;
     display: inline-block;
     margin: 2% 7%;
-    /* margin-left: 12%;
-    margin-top: 2%; */
     border-radius: 10px;
-}
+    background-color: rgba(206, 206, 206, 0.658);
+} */
+
+
 
 .sab{
-    width: 80%;
-    position: relative;
-    margin: -2% auto;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
+.menu-left{
+    width: 48%;
+    float: left;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 0px;
+    background-color: rgba(206, 206, 206, 0.658);
+}
+.menu-right{
+    width: 48%;
+    float: right;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 0px;
+    background-color: rgb(206, 206, 206);
+}
+nav li {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.475em;
+    font-weight: bolder;
+    border-radius: 10px;
+    line-height: 60px;
+    color:black;
+    margin: -2% auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    position: relative;
+    display: block;
+    background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
+    #ffd400 40%, #3498db 50%, #f47920 60%, #ce4265 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+    color: transparent; 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;   
+    background-size: 200% 100%; 
+    animation: masked-animation 2.98s infinite linear;
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
 
 
 
@@ -87,5 +130,5 @@ nav a {
     bottom: 0%;
     /* margin-bottom: 0.001%; */
     text-align: center;
-    font-size: 1.135em;
+    font-size: 13px;
 }
