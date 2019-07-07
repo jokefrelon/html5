@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:white
+    background-color:gray;
 }
 a{
     text-decoration: none;
@@ -10,4 +10,105 @@ a{
 a:hover{
     color: #30678b;
     text-decoration: none
+}
+
+.asaaa{
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+
+.title{
+    font-size: 1.275em;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+.article{
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 9em;
+    font-size: 0.87501em;
+    text-align: center;
+    background-image: url(pic/html.jpg);
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    border-radius: 12px;
+    padding-top:25%;
+
+}
+
+.article-1{
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 9em;
+    font-size: 0.87501em;
+    text-align: center;
+    background-image: url(pic/java.jpg);
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    border-radius: 12px;
+    padding-top:25%;
+
+}
+
+.article-2{
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 9em;
+    font-size: 0.87501em;
+    text-align: center;
+    background-image: url(pic/python.jpg);
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    border-radius: 12px;
+    padding-top:25%;
+
+}
+
+
+
+
+
+
+.links{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.little-text{
+overflow: hidden;
 }
