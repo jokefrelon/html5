@@ -26,34 +26,34 @@ margin-right: auto;
 .sab{
     position: relative;
     top: 3%;
-    width: 90%;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
 }
 .menu-left{
-    width: 48%;
+    width: 25%;
     float: left;
     text-align: center;
     display: block;
     text-decoration: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
     border-radius: 10px;
-    margin-left: 0px;
+    margin-left: 20%;
     background-color: rgba(206, 206, 206, 0.658);
 }
 .menu-right{
-    width: 48%;
+    width: 25%;
     float: right;
     text-align: center;
     display: block;
     text-decoration: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
     border-radius: 10px;
-    margin-right: 0px;
+    margin-right: 20%;
     background-color: rgb(206, 206, 206);
 }
 div li {
