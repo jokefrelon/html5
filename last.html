@@ -6,6 +6,11 @@
             return false;
         }
         document.oncontextmenu = stop;
+        var date = new Date();
+        nowtime=date.getHours;
+        if (nowtime<6|nowtime>18){
+            document.body.style.backgroundColor="black";
+        }
     </script>
     <meta charset="utf-8">
     <title>doc</title>
@@ -17,7 +22,7 @@
     <div>
         <img src="log.jpg" class="asaaa" alt="picture" ondragstart="return false">
     </div>
-    <div>
+    <div id="regular">
 
 
 
@@ -26,27 +31,33 @@
         <div>
             <div class="title">标题</div>
             <a href="#" class="links">
-                <div class="article">图片</div>
+                <div class="article" id="commen"></div>
             </a>
-            <a class="little-text"><span></span></a>
+            <a class="little-text">
+                <p>introduce the article</p>
+            </a>
 
         </div>
 
         <div>
             <div class="title">标题</div>
             <a href="#" class="links">
-                <div class="article-1">图片</div>
+                <div class="article-1" id="commen"></div>
             </a>
-            <a class="little-text"><span></span></a>
+            <a class="little-text">
+                <p>introduce the article</p>
+            </a>
 
         </div>
 
         <div>
             <div class="title">标题</div>
             <a href="#" class="links">
-                <div class="article-2">图片</div>
+                <div class="article-2" id="commen"></div>
             </a>
-            <a class="little-text"><span></span></a>
+            <a class="little-text">
+                <p>introduce the article</p>
+            </a>
 
         </div>
 
