@@ -6,6 +6,18 @@
             return false;
         }
         document.oncontextmenu = stop;
+
+
+        window.onload=function(){ 
+            var date = new Date;
+            nowtime=date.getHours;
+            if(nowtime<6|nowtime>18){
+                changeColor();
+            }
+        }
+        function changeColor(){
+            document.body.backgroundColor="#9b9b9b";
+        }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -19,11 +31,11 @@
         <img src="log.jpg" class="asaaa" alt="picture" ondragstart="return false">
     </div>
     <div class="sab">
-        <a href="#" class="menu-left">
+        <a href="https://www.remove.bg/" class="menu-left">
             <li>
-                Java</li>
+                神奇抠图</li>
         </a>
-        <a href="#" class="menu-right">
+        <a href="" class="menu-right">
             <li>
                 Python</li>
         </a>
@@ -51,7 +63,8 @@
                 <div class="article" id="commen"></div>
             </a>
             <a class="little-text">
-                <p>introduce the article</p>
+                <p class="span">HTML5
+                </p>
             </a>
 
         </div>
@@ -62,7 +75,7 @@
                 <div class="article-1" id="commen"></div>
             </a>
             <a class="little-text">
-                <p>introduce the article</p>
+                <p class="span">JAVA</p>
             </a>
 
         </div>
@@ -73,10 +86,22 @@
                 <div class="article-2" id="commen"></div>
             </a>
             <a class="little-text">
-                <p>introduce the article</p>
+                <p class="span">Python</p>
             </a>
 
         </div>
+
+        <div>
+            <div class="title">标题</div>
+            <a href="#" class="links">
+                <div class="article-3" id="commen"></div>
+            </a>
+            <a class="little-text">
+                <p class="span">Linux</p>
+            </a>
+
+        </div>
+
         </div>
     <div class="asz">
         <span class="asza">
