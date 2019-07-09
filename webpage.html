@@ -6,18 +6,14 @@
             return false;
         }
         document.oncontextmenu = stop;
-
-
-        window.onload=function(){ 
+        function changeColor(){
+            document.body.backgroundColor="#9b9b9b";
+        }
             var date = new Date;
             nowtime=date.getHours;
             if(nowtime<6|nowtime>18){
                 changeColor();
             }
-        }
-        function changeColor(){
-            document.body.backgroundColor="#9b9b9b";
-        }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -35,7 +31,7 @@
             <li>
                 抠图</li>
         </a>
-        <a href="" class="menu-right">
+        <a href="#" class="menu-right">
             <li>
                 Python</li>
         </a>
