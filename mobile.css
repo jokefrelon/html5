@@ -1,14 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:white
+    /* background-color: #9b9b9b */
 }
 a{
     text-decoration: none;
 }
     
 a:hover{
-    color: #30678b;
+    color: rgb(55, 192, 255);
     text-decoration: none
 }
 
@@ -104,6 +104,7 @@ div li {
 .title{
     font-size: 1.275em;
     text-align: center;
+    margin-bottom: -0.5em;
 
 }
 
@@ -120,6 +121,10 @@ div li {
 
 .article-2{
     background-image: url(pic/python.jpg);
+}
+
+.article-3{
+    background-image: url(pic/linux.png);
 }
 
 
@@ -148,33 +153,21 @@ div li {
 .little-text{
 overflow: hidden;
 position: relative;
-display: block;
-margin-bottom: 9em;
+display: inline-block;
+margin-bottom: 2em;
 margin-left: 10%;
+margin-right: 10%;
+font-size: 0.7em;
+font-weight: bold;
+background-color: #9b9b9b;
+border-radius: 10px;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .asz{
     width: 100%;
