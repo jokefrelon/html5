@@ -23,7 +23,7 @@ margin-right: auto;
 }
 
 
-.sab{
+.nav{
     position: relative;
     top: 3%;
     width: 100%;
@@ -40,7 +40,7 @@ margin-right: auto;
     text-decoration: none;
     margin-bottom: 20px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-left: 20%;
     background-color: rgba(206, 206, 206, 0.658);
 }
@@ -52,7 +52,7 @@ margin-right: auto;
     text-decoration: none;
     margin-bottom: 20px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-right: 20%;
     background-color: rgb(206, 206, 206);
 }
@@ -62,7 +62,7 @@ div li {
     text-align: center;
     width: 100%;
     display: inline-block;
-    font-size: 1.475em;
+    font-size: 0.9865em;
     font-weight: bolder;
     border-radius: 10px;
     line-height: 60px;
@@ -102,7 +102,7 @@ div li {
     margin-left: 20%;
 }
 .title{
-    font-size: 1.275em;
+    font-size: 0.87545em;
     text-align: center;
     margin-bottom: -0.5em;
 
@@ -139,7 +139,7 @@ div li {
     background-size: cover;
     display: inline-block;
     background-position: center;
-    border-radius: 30px;
+    border-radius: 13px;
     padding-top:40%;
 }
 
@@ -157,7 +157,7 @@ display: inline-block;
 margin-bottom: 2em;
 margin-left: 10%;
 margin-right: 10%;
-font-size: 0.7em;
+font-size: 1px;
 font-weight: bold;
 background-color: #9b9b9b;
 border-radius: 10px;
