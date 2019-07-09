@@ -96,6 +96,71 @@ div li {
     margin-top: 20px;
 }
 
+#regular{
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+}
+.title{
+    font-size: 1.275em;
+    text-align: center;
+
+}
+
+
+.article{
+    background-image: url(pic/html.jpg);
+
+}
+
+.article-1{
+    background-image: url(pic/java.jpg);
+
+}
+
+.article-2{
+    background-image: url(pic/python.jpg);
+}
+
+
+#commen{
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    height: auto;
+    margin-top: 1em;
+    font-size: 0.87501em;
+    text-align: center;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    border-radius: 30px;
+    padding-top:40%;
+}
+
+
+
+.links{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.little-text{
+overflow: hidden;
+position: relative;
+display: block;
+margin-bottom: 9em;
+margin-left: 10%;
+}
 
 
 
@@ -123,7 +188,7 @@ div li {
 .asz{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.603);
-    position: absolute;
+    position: relative;
     bottom: 0%;
     /* margin-bottom: 0.001%; */
     text-align: center;
