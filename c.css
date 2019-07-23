@@ -1,0 +1,211 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.ds {
+    width: 100%;
+    height: auto;
+    line-height: 35px;
+    border-bottom: none;
+    box-sizing: border-box;
+    font-size: 13px;
+    padding: 0px;
+
+}
+
+.ds .ffds {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.ds .ffds .er {
+    box-sizing: border-box;
+    float: left;
+    list-style: none;
+    width: 20%;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    background: #000000af;
+    font-weight: bolder
+}
+
+.ds .ffds li:hover {
+    color: pink;
+}
+
+.ds .ffds li:hover .d {
+    display: block;
+}
+
+.ds .ffds li:hover .de {
+    display: block;
+}
+
+.ds .ffds .er .d li:hover {
+    color: rgb(87, 99, 168);
+}
+
+.ds .ffds .er .de li:hover {
+    color: rgb(100, 111, 173);
+}
+
+.ds .ffds::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ds .ffds .er .se::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ds .ffds .er .d {
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+    display: none;
+    padding-left: 0px;
+    border-radius: 3px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.ds .ffds .er .d .se {
+    position: absolute;
+    left: 0px;
+    width: 120%;
+    padding: 0px;
+    border-radius: 1px;
+    background: rgba(0, 0, 0, 0.733);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ds .ffds .er .d .se .era {
+    padding: 0px;
+    list-style: none;
+    float: left;
+    display: block;
+    margin: 10px 11%;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+.ds .ffds .er .de {
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+    display: none;
+    padding-left: 0px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.ds .ffds .er .de .see {
+    position: absolute;
+    left: -10%;
+    width: 100%;
+    padding: 0px;
+    border-radius: 1px;
+    background: rgba(00, 00, 00, 0.4);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ds .ffds .er .de .see .erae {
+    height: 20%;
+    padding: 0px;
+    list-style: none;
+    float: left;
+    display: block;
+    margin: 10px 15px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.tu {
+    margin-top: 30px;
+}
+
+.tu .hg::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.taobao {
+    margin-left: 30px;
+    display: block;
+}
+
+.hg {
+    width: 60%;
+    float: left;
+    margin-left: 180px;
+    margin-top: -35px;
+}
+
+.threes {
+    width: 45px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -26px;
+    margin-left: 13px;
+
+}
+
+.hg p:hover {
+    background: orange;
+    color: white;
+    border-radius: 7px;
+
+}
+
+.but {
+    float: left;
+    width: 70%;
+    height: 20px;
+    margin-left: -160px;
+}
+
+
+.facke{
+    display: block;
+    float:right;
+    margin-right: -200px;    
+}
+
+.picO {
+    height: 70px;
+    width: 70px;
+    margin-top: -30px;
+    
+}
+
+.sk {
+    display: block;
+    text-align: center;
+    line-height: 17px;
+    width: 16px;
+    background: orange;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -85px;
+    margin-left: 64px;
+}
+
