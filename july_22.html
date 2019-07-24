@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="c.css">
-
+    <script type="text/javascript" src="fu.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="ds">
         <ul class="ffds">
-            <li class="er">憨瓜你所看见的
-                <div class="d">
+            <li onmouseover="changeBlock()" onmouseout="changeNone()" class="er">憨瓜你所看见的
+                <div id="hek" class="d">
                     <ul class="se">
                         <li class="era">chines</li>
                         <li class="era">chines</li>
@@ -32,8 +32,8 @@
                     </ul>
                 </div>
             </li>
-            <li class="er">憨瓜你所看见的
-                <div class="d">
+            <li onmouseover="changeBlockA()" onmouseout="changeNoneA()" class="er">憨瓜你所看见的
+                <div id="hekA" class="d">
                     <ul class="se">
                         <li class="era">chines</li>
                         <li class="era">chines</li>
@@ -53,8 +53,8 @@
                     </ul>
                 </div>
             </li>
-            <li class="er">憨瓜你所看见的
-                <div class="d">
+            <li onmouseover="changeBlockB()" onmouseout="changeNoneB()" class="er">憨瓜你所看见的
+                <div id="hekB" class="d">
                     <ul class="se">
                         <li class="era">chines</li>
                         <li class="era">chines</li>
@@ -74,8 +74,8 @@
                     </ul>
                 </div>
             </li>
-            <li class="er">憨瓜你所看见的
-                <div class="d">
+            <li onmouseover="changeBlockC()" onmouseout="changeNoneC()" class="er">憨瓜你所看见的
+                <div id="hekC" class="d">
                     <ul class="se">
                         <li class="era">chines</li>
                         <li class="era">chines</li>
@@ -115,19 +115,118 @@
             <p class="threes">淘宝</p>
             <p class="threes">淘宝</p>
             <p class="threes">淘宝</p>
-            <input class="but" type="text"/>
+            <input class="but" type="text" />
             <div class="facke">
                 <img id="erer" class="picO" src="https://img.alicdn.com/tfs/TB18W1cQFXXXXaWXXXXXXXXXXXX-160-160.png">
-                <p id="closee" class="sk" onclick="close()">×</p>
+                <button id="closee" class="sk" onclick="
+                        console.log('hs')
+    document.getElementById('erer').style.visibility='hidden';
+    document.getElementById('closee').style.visibility='hidden';
+                ">×</button>
             </div>
-
         </div>
     </div>
+    <div class="killtaobao">
+        <span class="killappl">辣椒酱</span>
+        <span class="killapple">辣椒酱</span>
+        <span class="killapple">辣椒酱</span>
+        <span class="killapple">|</span>
+        <span class="killapple">辣椒酱</span>
+        <span class="killapple">辣椒酱</span>
+        <span class="killapple">辣椒酱</span>
+        <span class="killapple">辣椒酱</span>
+        <span class="killapple">辣椒酱</span>
+    </div>
+<div class="jokeleo">
+    <div id="class" onmouseover="changeXiaomi()" onmouseout="changeRedmi()" class="frelonme">
+        <span class="junilulu">玩具</span>
+        <span class="junilulu">数码</span>
+        <span class="junilulu">运动</span>
+        <div id="demo" class="efv">
+            <p class="poi">
+                <span class="mnt">玩具</span>
+                <span class="mnt">玩具</span>
+                <span class="mnt">玩具</span>
+                <span class="mnt">玩具</span>
+                <span class="mnt">玩具</span>
+            </p>
+            <p class="poi">
+                <span class="mnt">数码</span>
+                <span class="mnt">数码</span>
+                <span class="mnt">数码</span>
+                <span class="mnt">数码</span>
+                <span class="mnt">数码</span>
+            </p>
+            <p class="poi">
+                <span class="mnt">手机</span>
+                <span class="mnt">手机</span>
+                <span class="mnt">手机</span>
+                <span class="mnt">手机</span>
+                <span class="mnt">手机</span>
+            </p>
+        </div>
+    </div>
+    <div id="classA" onmouseover="changeXiaomiA()" onmouseout="changeRedmiA()" class="frelonme">
+        <span class="junilulu">游戏</span>
+        <span class="junilulu">动漫</span>
+        <span class="junilulu">建材</span>
+        <div id="demoA" class="efv">
+                <p class="poi">
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                </p>
+                <p class="poi">
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                </p>
+                <p class="poi">
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                </p>
+            </div>
+    </div>
+    <div id="classB" onmouseover="changeXiaomiB()" onmouseout="changeRedmiB()" class="frelonme">
+        <span class="junilulu">手表</span>
+        <span class="junilulu">水果</span>
+        <span class="junilulu">食品</span>
+        <div id="demoB" class="efv">
+                <p class="poi">
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                    <span class="mnt">玩具</span>
+                </p>
+                <p class="poi">
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                    <span class="mnt">数码</span>
+                </p>
+                <p class="poi">
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                    <span class="mnt">手机</span>
+                </p>
+            </div>
+    </div>
+</div>
 
 
 
 
-    <script type="text/javascript" src="fu.js"></script>
 </body>
 
 </html>

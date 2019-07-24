@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    min-width: 900px;
 }
 
 .ds {
@@ -11,6 +12,7 @@ body {
     box-sizing: border-box;
     font-size: 13px;
     padding: 0px;
+    z-index: 100;
 
 }
 
@@ -36,20 +38,18 @@ body {
     color: pink;
 }
 
-.ds .ffds li:hover .d {
-    display: block;
-}
+
 
 .ds .ffds li:hover .de {
     display: block;
 }
 
 .ds .ffds .er .d li:hover {
-    color: rgb(87, 99, 168);
+    color: rgb(133, 151, 253);
 }
 
 .ds .ffds .er .de li:hover {
-    color: rgb(100, 111, 173);
+    color: rgb(132, 149, 250);
 }
 
 .ds .ffds::after {
@@ -115,7 +115,7 @@ body {
     width: 100%;
     padding: 0px;
     border-radius: 1px;
-    background: rgba(00, 00, 00, 0.4);
+    background: rgba(00, 00, 00, 0.7);
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -183,24 +183,23 @@ body {
 }
 
 
-.facke{
+.facke {
     display: block;
-    float:right;
-    margin-right: -200px;    
+    float: right;
+    margin-right: -150px;
 }
 
 .picO {
     height: 70px;
     width: 70px;
     margin-top: -30px;
-    
+
 }
 
 .sk {
     display: block;
-    text-align: center;
-    line-height: 17px;
-    width: 16px;
+    line-height: 16px;
+    width: 22px;
     background: orange;
     border-radius: 50%;
     font-size: 20px;
@@ -209,3 +208,67 @@ body {
     margin-left: 64px;
 }
 
+.killtaobao {
+    width: 100%;
+    background: orange;
+    color: white;
+    margin-top: 20px;
+}
+
+.killtaobao :first-child {
+    text-align: center;
+    display: inline-block;
+    background: orangered;
+    width: 230px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.killtaobao :nth-child(4) {
+    cursor: auto;
+}
+
+.killapple {
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 30px;
+    line-height: 20px;
+}
+
+.jokeleo {
+    width: 230px;
+    background:whitesmoke;
+    margin-left: 5%;
+    /* border: 1px solid orangered; */
+    box-sizing: border-box
+}
+
+.frelonme{
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 0px;
+
+}
+
+
+.junilulu{
+    margin: 10px 16px;
+    display: inline-block;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.efv{
+    display: none;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -60px;
+}
+.poi{
+    margin-left: 10px;
+}
+.mnt{
+    padding :10px 8px;
+    font-size: 14px;
+}
