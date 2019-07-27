@@ -6,14 +6,15 @@
             return false;
         }
         document.oncontextmenu = stop;
-        function changeColor(){
-            document.body.backgroundColor="#9b9b9b";
+
+        function changeColor() {
+            document.body.backgroundColor = "#9b9b9b";
         }
-            var date = new Date;
-            nowtime=date.getHours;
-            if(nowtime<6|nowtime>18){
-                changeColor();
-            }
+        var date = new Date;
+        nowtime = date.getHours;
+        if (nowtime < 6 | nowtime > 18) {
+            changeColor();
+        }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -98,7 +99,31 @@
 
         </div>
 
+    </div>
+
+    <h2 class="drr">最新文章</h2>
+    <div class="kololen">
+        <div class="laifu">
+            <h3 class="title">
+                关于WSL下(Ubuntu)apache 重启失败问题
+            </h3>
+            <P class="gt">
+
+                装了子系统 Ubuntu 后就给装上了 Apache2、PHP7、Mysql，安装环境见 折腾 Ubuntu 系统续之安装PHP、Apache2和Mysql。
+    
+    不过装完后启动 Apache2 能启动，Win10 下浏览器输入 127.0.0.1 正常打开，但启动服务会提示以下错误：
+    
+    <span style="color: red">Invalid argument: AH00076: Failed to enable APR_TCP_DEFER_ACCEP</span>
+    
+    解决办法是 stackoverflow 上找到的，方法如下：
+    
+    sudo vi 打开 /etc/apache2/apache2.conf，在文件的最底部加上一行以下内容：
+    
+    AcceptFilter http none
+    然后重启 Apache2 问题解决。
+            </P>
         </div>
+    </div>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    /* background-color: #9b9b9b */
+    background-color:white
 }
 a{
     text-decoration: none;
@@ -166,6 +166,7 @@ border-radius: 10px;
 .span{
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 0.9em;
 }
 
 .asz{
@@ -176,4 +177,20 @@ border-radius: 10px;
     /* margin-bottom: 0.001%; */
     text-align: center;
     font-size: 13px;
+}
+.kololen{
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin: 10px auto;
+}
+.drr{
+    font-size: 1.7em;
+    text-align: center;
+    color: gray;
+    margin-top: 40px
+}
+.kololen .laifu .gt{
+    text-indent: 2em;
+    margin: 10px 5px;
 }
