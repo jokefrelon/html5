@@ -5,6 +5,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: #ff1148
 }
     
 a:hover{
@@ -193,4 +194,8 @@ border-radius: 10px;
 .kololen .laifu .gt{
     text-indent: 2em;
     margin: 10px 5px;
+}
+.hh22{
+    text-align: center;
+    
 }
