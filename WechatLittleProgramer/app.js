@@ -37,3 +37,6 @@ App({
     userInfo: null
   }
 })
+function onChangeColor(){
+  
+}

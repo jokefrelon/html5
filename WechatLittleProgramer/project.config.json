@@ -11,6 +11,8 @@
 	"libVersion": "1.9.91",
 	"appid": "touristappid",
 	"projectname": "WechatLittleProgramer",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

@@ -8,3 +8,20 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.daohanglan{
+height: 40px;
+width: 100%;
+/* background-color: rgba(80, 80, 160, 0.5); */
+background-color: #c5b9df;
+position: absolute;
+bottom: 0px;
+}
+.thanksCCTV{
+color: #000000;
+float: left;
+text-align: center;
+width: 33.33%;
+font-size: 15px;
+font-family: "Microsoft YaHei";
+margin-top: 10px;
+}
