@@ -12,6 +12,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // http://172.17.150.251:8080/as.json
+    var _self = this
+    wx.request({
+      url: "http://172.17.150.251:8080/as.json",
+      success: function (qum) {
+        _self.setData({
+          heloi: qum.data.page,
+        })
+      }
+    })
+
 
   },
 
@@ -63,29 +74,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
-  }
-  // ,
 
-  // changecolor0: function () {
-  //   this.setData({
-  //     color0:"green",
-  //     color1:"black",
-  //     color2:"black"
-  //   })
-  // },
-  //   changecolor1: function () {
-  //   this.setData({
-  //     color0: "black",
-  //     color1: "green",
-  //     color2: "black"
-  //   })
-  // },
-  // changecolor2: function () {
-  //   this.setData({
-  //     color0: "black",
-  //     color1: "black",
-  //     color2: 'yellow'
-  //   })
-  // }
+  }
 })

@@ -1,1 +1,34 @@
 /* pages/first/first.wxss */
+.ress{
+  position: relative;
+  margin: 0
+}
+.qumd{
+  width: 100%;
+  color: goldenrod;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  font-family: "STHeiti";
+}
+.acf{
+text-align: center;
+margin-bottom: 5px;
+}
+.intro{display: inline-block;
+  width: 100%;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 3px
+}
+.ddas{
+  display: inline-block;
+  height: 150px;
+  width: 90%;
+}
+.pic{
+  height:100%;
+  width: 250px;
+  border-radius: 5px;
+}
