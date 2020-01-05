@@ -1,4 +1,5 @@
 /* pages/first/first.wxss */
+
 .ress{
   position: relative;
   margin: 0
@@ -11,24 +12,34 @@
   display: inline-block;
   font-family: "STHeiti";
 }
+.bhk{
+  background-color: rgb(201, 201, 201);
+  border-radius: 6px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 10px
+}
 .acf{
 text-align: center;
 margin-bottom: 5px;
 }
-.intro{display: inline-block;
+.intro{
+  display: inline-block;
   width: 100%;
   font-family: "Microsoft Yahei";
-  font-size: 12px;
+  font-size: 15px;
   position: relative;
   margin-bottom: 3px
 }
 .ddas{
   display: inline-block;
   height: 150px;
-  width: 90%;
 }
 .pic{
   height:100%;
-  width: 250px;
+  width: 270px;
   border-radius: 5px;
+  margin-bottom: 10px
 }

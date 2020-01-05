@@ -1,8 +1,10 @@
 <view class="ress">
   <view class="acf" wx:for="{{heloi}}" wx:key="index">
-    <span class="intro">{{item.introduce}}</span>
-    <div class="ddas">
-      <image class="pic" src='{{item.picurl}}'></image>
-    </div>
+    <view class="bhk">
+      <span class="intro">{{item.introduce}}</span>
+      <div class="ddas">
+        <image class="pic" src='{{item.picurl}}'></image>
+      </div>
+    </view>
   </view>
 </view>
