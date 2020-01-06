@@ -1,7 +1,8 @@
 <view class="ress">
+<view class='hetui'></view>
   <view class="acf" wx:for="{{heloi}}" wx:key="index">
     <view class="bhk">
-      <span class="intro">{{item.introduce}}</span>
+      <div class="guli"><p class="intro">{{item.introduce}}</p></div>
       <div class="ddas">
         <image class="pic" src='{{item.picurl}}'></image>
       </div>

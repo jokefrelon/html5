@@ -1,8 +1,18 @@
 /* pages/first/first.wxss */
 
 .ress{
-  position: relative;
-  margin: 0
+  margin: 0;
+  background:url('http://172.17.150.251:8080/pic/bk7.jpg');
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  background-position: inherit;
+  background-repeat:no-repeat;
+
+}
+.hetui{
+  width: 100%;
+  background-color: black;
+  border: 1rpx solid rebeccapurple
 }
 .qumd{
   width: 100%;
@@ -12,26 +22,38 @@
   display: inline-block;
   font-family: "STHeiti";
 }
-.bhk{
-  background-color: rgb(201, 201, 201);
-  border-radius: 6px;
-  width: 90%;
+ /* .bhk{
+  background-color: lightgrey;
+   border-radius: 6px;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  margin-top: 10px
-}
+}  */
 .acf{
-text-align: center;
-margin-bottom: 5px;
+margin-top: 2px;
+text-align: center; 
+margin-bottom: 4px;
+}
+.guli{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  height: 40px;
+  width: 70%;
+  position: relative;
+  display: inline-block; 
+  background-color: lightgrey;
+  border-radius: 7.7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .intro{
   display: inline-block;
-  width: 100%;
   font-family: "Microsoft Yahei";
   font-size: 15px;
-  position: relative;
-  margin-bottom: 3px
+  line-height: 40px;
+  margin-left: 10px;
+  margin-right: 10px; 
 }
 .ddas{
   display: inline-block;
