@@ -1,4 +1,4 @@
-// pages/first/first.js
+// pages/aitrcle/aitrcle.js
 Page({
 
   /**
@@ -11,17 +11,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-    var _self = this
-    wx.request({
-      url: "http://172.17.150.251:8080/as.json",
-      success: function (qum) {
-        _self.setData({
-          heloi: qum.data.page,
-        })
-      }
-    })
-
+  onLoad: function (options) {
 
   },
 
@@ -29,9 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    //   this.setData({
-    //     color0:'rgb(80, 80, 150)',
-    // })
+
   },
 
   /**
@@ -74,22 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-
-  showNextPage: function (e) {
-    var app = getApp()
-    var url = e.currentTarget.setData.id
-    app.setData({
-      nexturl:url
-    })
-    wx.navigateTo({
-      url: "/pages/aitrcle/aitrcle",
-      success: function () {
-        console.log("success!");
-        console.log(app.getApp.data.nexturl)
-      },
-      fail: function () { console.log("faild!!!") },
-    })
   }
 })

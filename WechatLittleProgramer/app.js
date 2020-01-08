@@ -34,7 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    nexturl:null
   }
 })
 function onChangeColor(){
