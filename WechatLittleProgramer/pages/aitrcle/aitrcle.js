@@ -5,14 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    paurl:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this
+    that.data.paurl =options.url
+    console.log(that.data.paurl)
 
+    wx.request({
+      url:that.data.paurl,
+      success:function(){
+        console.log("Yes! U did")
+      },
+      false:function(){
+        console.log("false")
+      }
+    })
   },
 
   /**

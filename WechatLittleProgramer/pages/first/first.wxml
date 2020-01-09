@@ -1,8 +1,8 @@
 <view class="re">
 	<view class="ress"></view>
 	<view class='hetui'></view>
-	<view class="acf" wx:for="{{heloi}}" wx:key="index" bindtap="showNextPage">
-		<view class="bhk" data-id="item.article">
+	<view class="acf" wx:for="{{heloi}}" wx:key="index">
+		<view class="bhk" data-arturl="{{item.article}}" bindtap="showNextPage">
 			<div class="guli"><text class="intro">{{item.introduce}}</text></div>
 			<div class="ddas">
 				<image class="pic" src='{{item.picurl}}'></image>

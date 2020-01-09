@@ -23,15 +23,14 @@
   display: inline-block;
   font-family: "STHeiti";
 }
- /* .bhk{
+ .bhk{
   width:80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightgrey;
-  border-radius: 6px;
+  /* background-color: lightgrey; */
+  border-radius: 6px; 
   margin-bottom: 10px;
-
-}  */
+}
 .acf{
 margin-top: 2px;
 text-align: center; 
@@ -42,7 +41,7 @@ margin-bottom: 4px;
   margin-bottom: 5px;
   margin-top: 7px;
   height: 40px;
-  width: 70%;
+  width: 80%;
   position: relative;
   display: inline-block; 
   background-color: rgb(231, 231, 231);

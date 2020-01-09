@@ -1,12 +1,28 @@
 // pages/first/first.js
 Page({
 
+  data: {
+  },
+  // onShareAppMessage: function () {
+
+  // },
+
+
+showNextPage: function (event) {
+  var url = event.currentTarget.dataset.arturl
+  console.log(url)
+  wx.navigateTo({
+    url: "/pages/aitrcle/aitrcle?url="+url,
+    success: function () { 
+      console.log("Success! Congratulate!")
+    },
+    fail: function () { console.log("faild!!!") },
+  })
+},  
   /**
    * 页面的初始数据
    */
-  data: {
 
-  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -72,24 +88,5 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
 
-  },
-
-
-  showNextPage: function (e) {
-    var app = getApp()
-    var url = e.currentTarget.setData.id
-    app.setData({
-      nexturl:url
-    })
-    wx.navigateTo({
-      url: "/pages/aitrcle/aitrcle",
-      success: function () {
-        console.log("success!");
-        console.log(app.getApp.data.nexturl)
-      },
-      fail: function () { console.log("faild!!!") },
-    })
-  }
 })
