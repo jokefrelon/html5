@@ -1,4 +1,4 @@
-# 微信小程序遇到的坑
+# 微信小程序遇到的坑🕳
 
 微信小程序其实很简单,和 **HTML** 差不多,但是又加入了微信的很多特色,我也是本着写着玩的心态写了几天的小程序,发现有很多坑哦,和 **HTML**还是有点差距的
 
@@ -82,6 +82,8 @@ wx:for用来解析服务器返回的 **json** 是真的很棒的,可以一键迭
 <view class="bhk" data-arturl="{{item.article}}" bindtap="showNextPage">LOL😁</view>
 ~~~
 
+不知道为什么这个 **data-arturl** 必须要和 **bindtap** 一起才可以读取到数据,如果把 **bingtap** 定义在 **data-arturl** 上面,我怎么样都拿不到数据,实在是搞不懂啥原因🍖
+
 ~~~javascript
 showNextPage: function (event) {
   var url = event.currentTarget.dataset.arturl
@@ -118,33 +120,43 @@ onLoad: function (options) {
 
 我只会这种简单的页面传参,还有别的传参方法,比如:	
 
-#### 使用数据库传递数据,
+~~~log
+使用数据库传递数据,
 
-#### 全局变量使用方法
+全局变量使用方法
 
-#### 使用缓存传递参数,使用组件模板 template传递参数
-
-
-
-
-
+使用缓存传递参数,使用组件模板 template传递参数
 ~~~
-docker run --detach --name solo --network=host \
---env RUNTIME_DB="MYSQL" \
---env JDBC_USERNAME="root" \
---env JDBC_PASSWORD="123123" \
---env JDBC_DRIVER="com.mysql.cj.jdbc.Driver" \
---env JDBC_URL="jdbc:mysql://127.0.0.1:3306/solo?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC" \
-b3log/solo --listen_port=80 --server_scheme=https --server_host=www.jokeme.top --server_port=
 
-docker stop nginx
-docker rm nginx 
-docker run -d -p 80:80 -p 443:443 --name nginx \
--v /dockerData/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
--v /dockerData/nginx/conf/conf.d:/etc/nginx/conf.d \
--v /dockerData/nginx/ssl:/ssl/ \
--v /dockerData/nginx/www:/usr/share/nginx/html \
--v /dockerData/nginx/logs:/var/log/nginx nginx
+## 5 小程序页面跳转
 
+常见的有四种方法
+
+|  wx.navigateTo({})  | 保留当前页面，跳转到应用内的某个页面，使用 wx.navigateBack 可以返回; |
+| :-----------------: | :----------------------------------------------------------: |
+| **wx.redirectTo()** |          **关闭当前页面，跳转到非tabBar的某个页面**          |
+|   **<navigator>**   |    **<navigator url='../test/test'>点击跳转</navigator>**    |
+|  **wx.switchTab**   |                  **跳转到tabBar的某个页面**                  |
+
+举个例子🌰
+
+~~~javascript
+wx.navigateTo({
+	url:'../test/test?id=1&page=4',  //跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径，不需要.wxml后缀
+	success:function(){}        //成功后的回调；
+	fail：function(){}          //失败后的回调；
+	complete：function(){}      //结束后的回调(成功，失败都会执行)
+})
+ 
+//传递的参数在接收页面onLoad()函数中得到值：option.id就可以得到了
+onLoad: function (option) {
+	console.log(option)//可以打印一下option看查看参数
+	this.setData({
+		id:option.id,
+});
 ~~~
+
+
+
+这大概就是这几天踩得坑,虽然都不难,但是对于我们这种初学者还是有一点难度的🍓,暂时就更新到这里,过几天遇到了坑,再继续更新
 
