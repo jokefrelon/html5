@@ -34,6 +34,7 @@ showNextPage: function (event) {
       success: function (qum) {
         _self.setData({
           heloi: qum.data.page,
+          
         })
       }
     })
