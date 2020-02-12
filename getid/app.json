@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/hero/hero"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#202020",
+    "navigationBarTitleText": "轩辕拽轩",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#666",
+    "color": "#000",
+    "selectedColor": "#114848",
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "text": "首页",
+        "iconPath": "pics/infoblack.png",
+        "selectedIconPath": "pics/infored.png"
+      },
+      {
+        "pagePath": "pages/hero/hero",
+        "text": "SOHO",
+        "iconPath": "pics/userblack.png",
+        "selectedIconPath": "pics/usered.png"
+      }
+    ]
+  }
+}
