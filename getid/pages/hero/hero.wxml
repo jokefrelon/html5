@@ -1,2 +1,6 @@
-<!--pages/hero/hero.wxml-->
-<text>pages/hero/hero.wxml</text>
+<view>
+<text>科学上网节点共享</text>
+<view wx:for="{{ssr}}" wx:key="index">
+  <view class="iso">{{item.ssr}}</view>
+</view>
+</view>

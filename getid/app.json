@@ -11,21 +11,21 @@
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "backgroundColor": "#666",
+    "backgroundColor": "#999",
     "color": "#000",
-    "selectedColor": "#114848",
+    "selectedColor": "#e0620d",
     "list": [
       {
         "pagePath": "pages/first/first",
         "text": "首页",
-        "iconPath": "pics/infoblack.png",
-        "selectedIconPath": "pics/infored.png"
+        "iconPath": "pics/home.png",
+        "selectedIconPath": "pics/homes.png"
       },
       {
         "pagePath": "pages/hero/hero",
-        "text": "SOHO",
-        "iconPath": "pics/userblack.png",
-        "selectedIconPath": "pics/usered.png"
+        "text": "推荐",
+        "iconPath": "pics/mes.png",
+        "selectedIconPath": "pics/mess.png"
       }
     ]
   }

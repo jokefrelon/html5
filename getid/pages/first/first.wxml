@@ -1,32 +1,56 @@
-<view class="bu" style="background-color:{{bu}}"></view>
-<view class="intro" style="color:{{introcolor}}">点击<text>{{introtext}}</text>账号/密码复制文本</view>
-<view class="warning">请务必不要登陆iCloud！！！登陆完账号请及时退出，方便他人的使用</view>
+<view class="bu" style="background-color:{{style[0]}}"></view>
+<view class="intro" style="color:{{style[6]}}">点击
+  <text>{{style[5]}}</text>账号/密码复制文本,如果账号锁定，请选择邮箱解锁</view>
+<view class="warning">请务必不要登陆
+  <view>i</view>
+  <view>C</view>
+  <view>l</view>
+  <view>o</view>
+  <view>u</view>
+  <view>d</view> , 登陆完账号请及时退出 ，方便他人的使用</view>
 <view class="line"></view>
-<view class="box" style="background-color:{{box}}" wx:for="{{ids}}" wx:key="index">
+<view class="box" style="background-color:{{style[1]}}" wx:for="{{ids}}" wx:key="index">
 
   <view class="account">
     <view class="aimg"></view>
-    <text class="text" style="color:{{text}}">账号:</text>
-    <text class="txt" style="color:{{txt}}" bindtap="cpa" data-index="{{index}}">{{item.account}}</text>
+    <text class="text" style="color:{{style[3]}}">账号:</text>
+    <text class="txt" style="color:{{style[4]}}" bindtap="cpa" data-index="{{index}}">{{item.account}}</text>
   </view>
 
-  <view class="line" style="background-color:{{line}}"></view>
+  <view class="line" style="background-color:{{style[2]}}"></view>
 
   <view class="passcode">
     <view class="pimg"></view>
-    <text class="text" style="color:{{text}}">密码:</text>
-    <text class="txt" style="color:{{txt}}" bindtap="cpp" data-index="{{index}}">********</text>
+    <text class="text" style="color:{{style[3]}}">密码:</text>
+    <text class="txt" style="color:{{style[4]}}" bindtap="cpp" data-index="{{index}}">********</text>
   </view>
 
-  <view class="line" style="background-color:{{line}}"></view>
+  <view class="line" style="background-color:{{style[2]}}"></view>
 
   <view class="areas">
     <view class="area"></view>
-    <text class="text" style="color:{{text}}">地区:</text>
-    <text class="txt" style="color:{{txt}}">{{item.area}}</text>
+    <text class="text" style="color:{{style[3]}}">地区:</text>
+    <text class="txt" style="color:{{style[4]}}">{{item.area}}</text>
   </view>
+
+  <view class="line" style="background-color:{{style[2]}}"></view>
+
+  <view class="times">
+    <view class="time"></view>
+    <text class="text" style="color:{{style[3]}}">时间:</text>
+    <text class="txt" style="color:{{style[4]}}">{{item.time}}</text>
+  </view>
+
+  <view class="line" style="background-color:{{style[2]}}"></view>
+
+  <view class="infos">
+    <view class="info"></view>
+    <text class="text" style="color:{{style[3]}}">介绍:</text>
+    <text class="txt" style="color:{{style[4]}}">{{item.info}}</text>
+  </view>
+
 </view>
-<button class="one-key-dark" style="background-color:{{onekeydarkBKcolor}};color:{{onekeydarkColor}}" bindtap="onekeydark">{{onekeydarktext}}</button>
+<button class="one-key-dark" style="background-color:{{style[9]}};color:{{style[8]}}" bindtap="onekeydark">{{style[7]}}</button>
 <view class="endText">所有账号都是纯公益，请勿恶意使用
   <text class="xuan">轩辕拽轩™️</text>
 </view>

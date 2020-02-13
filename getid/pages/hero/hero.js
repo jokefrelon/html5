@@ -5,13 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    ssr:[]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
+    var self = this
+    wx.request({
+      url: 'https://jokeme.top/ssr.json',
+      success:function(res){
+        self.setData({
+          ssr:res.data.lok
+        })
+      },
+      fail: function (res) {
+        console.log("error")
+      }
+
+    })
+
 
   },
 

@@ -6,27 +6,8 @@ Page({
    */
   data: {
     ids: [],
-    bu: "rgb(246, 246, 246)",
-    box: "rgb(254, 254, 254)",
-    line:"black",
-    text: "gray",
-    txt: "red",
-    introtext: "红色",
-    introcolor: "blue",
-    onekeydarktext: "暗",
-    onekeydarkColor: "white",
-    onekeydarkBKcolor: "black",
-    // ~~~~~~~~~~~~~~~~~~~~
-    bu1: "#272727",
-    box1: "rgb(0, 0, 0)",
-    line:"gray",
-    text1: "gray",
-    txt1: "darkgreen",
-    introtext1: "绿色",
-    introcolor1: "whitesmoke",
-    onekeydarktext1: "亮",
-    onekeydarkColor1: "black",
-    onekeydarkBKcolor1: "#777"
+    style: ["#f6f6f6", "#fefefe", "black", "gray", "#ff0000", "红色", "#0000ff", "暗", "white", "#000"],
+    fongo: ["#272727", "#000000", "gray", "gray", "#006400", "绿色", "#f5f5f5", "亮", "black", "#777"],
   },
   cpa: function(e) {
     var str = e.currentTarget.dataset['index'];
@@ -46,64 +27,32 @@ Page({
   },
   onekeydark: function(e) {
     var self = this;
-    var temp = null;
+    var logo;
+    var style = wx.getStorageSync("style");
+    var fongo = wx.getStorageSync("fongo");
 
-    temp = self.data.bu;
-    self.setData({
-      bu: self.data.bu1
-    });
-    self.data.bu1 = temp;
+    if(!style){
+      wx.setStorageSync("style", self.data.style);
+      for (logo in self.data.style) {
+        self.setData({
+          ['style' + '[' + logo + ']']: self.data.fongo[logo]
+        });
+      };
+      self.data.fongo=wx.getStorageSync("style")
+      wx.clearStorage()
+      wx.setStorageSync("style",self.data.style)
+      wx.setStorageSync("fongo",self.data.fongo)
+    }else{
 
-    temp = self.data.box;
-    self.setData({
-      box: self.data.box1
-    });
-    self.data.box1 = temp;
-
-    temp = self.data.text;
-    self.setData({
-      text: self.data.text1
-    });
-    self.data.text1 = temp;
-
-    temp = self.data.txt;
-    self.setData({
-      txt: self.data.txt1
-    });
-    self.data.txt1 = temp;
-
-    temp = self.data.introcolor;
-    self.setData({
-      introcolor: self.data.introcolor1
-    });
-    self.data.introcolor1 = temp;
-
-    temp = self.data.introtext;
-    self.setData({
-      introtext: self.data.introtext1
-    });
-    self.data.introtext1 = temp;
-
-    temp = self.data.onekeydarktext;
-    self.setData({
-      onekeydarktext: self.data.onekeydarktext1
-    });
-    self.data.onekeydarktext1 = temp;
-
-    temp = self.data.onekeydarkColor;
-    self.setData({
-      onekeydarkColor: self.data.onekeydarkColor1
-    });
-    self.data.onekeydarkColor1 = temp;
-
-    temp = self.data.onekeydarkBKcolor;
-    self.setData({
-      onekeydarkBKcolor: self.data.onekeydarkBKcolor1
-    })
-    self.data.onekeydarkBKcolor1 = temp;
-
+      for (logo in style){
+        self.setData({
+          ['style'+'['+logo+']']:fongo[logo]
+        });
+      };
+      wx.setStorageSync("fongo", style);
+      wx.setStorageSync("style", fongo);
+    }
   },
-
 
   /**
    * 生命周期函数--监听页面加载
@@ -111,7 +60,7 @@ Page({
   onLoad: function(options) {
     var self = this
     wx: wx.request({
-      url: 'https://jokeme.top/id.json',
+      url: 'https://jokeme.top/ids.json',
       header: {
         "UserAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B150 MicroMessenger/6.6.1 NetType/WIFI Language/zh_CN"
       },
@@ -129,7 +78,17 @@ Page({
         console.log("error")
       },
       complete: function(res) {},
-    })
+    });
+
+    var tempdata = wx.getStorageSync("style")
+    if(tempdata){
+      var soso;
+      for (soso in self.data.style){
+        self.setData({
+          ['style'+'['+soso+']']: tempdata[soso]
+        })
+      }
+    }
 
   },
 
@@ -167,7 +126,7 @@ Page({
   onPullDownRefresh: function() {
     wx.showNavigationBarLoading()
     this.onLoad()
-    setTimeout(function () {
+    setTimeout(function() {
       wx.hideNavigationBarLoading()
       wx.stopPullDownRefresh()
     }, 2000);

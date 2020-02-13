@@ -1,1 +1,11 @@
 /* pages/hero/hero.wxss */
+
+.iso {
+  width: 80%;
+  height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto
+}
